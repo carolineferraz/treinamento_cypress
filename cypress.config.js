@@ -5,7 +5,8 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     viewportHeight: 720,
     watchForFileChanges: false,
-    specPattern: 'cypress/2e2/**/*.feature',
+    specPattern: 'cypress/e2e/**/*.feature',
+    baseUrl: 'http://www.automationpractice.pl/',
 
     setupNodeEvents(on, config) {
       const cucumber = require('cypress-cucumber-preprocessor').default;
