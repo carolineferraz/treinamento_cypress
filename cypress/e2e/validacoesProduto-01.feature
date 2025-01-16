@@ -6,4 +6,4 @@ Funcionalidade: testeValidacaoProduto-01 - Produto Fora de Estoque
         Dado que acesso a página Women do portal My Shop
         Quando sobreponho o cursor do mouse sobre um produto fora de estoque
         Então botão de adicionar ao carrinho está visível
-        E botão de adicionar ao carrinho está desabilitado
+        Mas botão de adicionar ao carrinho está desabilitado
