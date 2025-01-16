@@ -17,3 +17,5 @@
 import './commands'
 import './pages/login.page'
 import './pages/home.page'
+import './pages/women.page'
+import './pages/produto.page'
