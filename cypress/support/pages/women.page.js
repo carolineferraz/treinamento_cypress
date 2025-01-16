@@ -14,6 +14,6 @@ Cypress.Commands.add('validarAddToCartVisivel', () => {
     cy.get(LI_PRODUTO_FORA_DE_ESTOQUE).find(SPAN_ADD_TO_CART).should('be.visible')
 })
 
-Cypress.Commands.add('validarAddToCarDesabilitado', () => {
+Cypress.Commands.add('validarAddToCartDesabilitado', () => {
     cy.get(SPAN_ADD_TO_CART).should('have.class', 'disabled')
 })

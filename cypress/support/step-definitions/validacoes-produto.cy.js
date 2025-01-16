@@ -12,5 +12,5 @@ Then('botão de adicionar ao carrinho está visível', () => {
 })
 
 And('botão de adicionar ao carrinho está desabilitado', () => {
-    cy.validarAddToCarDesabilitado()
+    cy.validarAddToCartDesabilitado()
 })
