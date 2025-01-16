@@ -11,9 +11,11 @@ Cypress.Commands.add('sobreporCursorSobreProdutoForaDeEstoque', () => {
 })
 
 Cypress.Commands.add('validarAddToCartVisivel', () => {
-    cy.get(LI_PRODUTO_FORA_DE_ESTOQUE).find(SPAN_ADD_TO_CART).should('be.visible')
+    cy.sobreporCursorSobreProdutoForaDeEstoque()
+        .find(SPAN_ADD_TO_CART).should('be.visible')
 })
 
 Cypress.Commands.add('validarAddToCartDesabilitado', () => {
-    cy.get(SPAN_ADD_TO_CART).should('have.class', 'disabled')
+    cy.sobreporCursorSobreProdutoForaDeEstoque()
+        .find(SPAN_ADD_TO_CART).should('have.class', 'disabled')
 })
