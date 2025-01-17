@@ -6,7 +6,7 @@ Cypress.Commands.add('acessarLogin', () => {
 })
 
 Cypress.Commands.add('validarLogin', () => {
-    cy.get('.account').should('contain.text', 'Luiza ferreira')
+    cy.get('.account').should('contain.text', 'Teste Cypress')
 })
 
 Cypress.Commands.add('acessarPaginaWomen', () => {
